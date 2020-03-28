@@ -8,6 +8,7 @@ Run as Cronjob every minute, the script will take 6 photos then exit, effectivel
 The way I have it setup is to write the photos to a mounted dir, and also to rotate 90 degrees since I have the camera longways to get a particular shot/angle.
 
 Cron:
+```
 * * * * * /usr/bin/python3 /home/pi/pi-python-webcam-timelapse/webcam.py  2>&1 >> /tmp/cron 
-
+```
 
